@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with alternating feature blocks
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+      }
+
+      .svg {
+        width: 100px;
+        height: 15px;
+      }
+
+      .mockups {
+        width: 100%;
+        height: 200px;
+      }
+
+      .image {
+        flex-basis: 50%;
+        padding: 5px;
+      }
+
+      .header {
+        background: hsl(193, 100%, 96%) url(./images/bg-hero-desktop.svg)
+          no-repeat center/cover;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .nav1 {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .nav2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: justify;
+        gap: 20px;
+      }
+
+      .purpose {
+        flex-basis: 50%;
+        align-items: center;
+        text-align: justify;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 20px;
+      }
+
+      button {
+        background-color: hsl(322, 100%, 66%);
+        border-radius: 15px;
+        border: none;
+        padding: 10px 0;
+        cursor: pointer;
+      }
+
+      .try {
+        background: hsl(0, 0%, 100%);
+        color: hsl(0, 0%, 0%);
+        border-radius: 20px;
+        padding: 15px 20px;
+      }
+
+      button:hover {
+        opacity: 0.5;
+      }
+
+      main {
+        min-height: 100vh;
+      }
+
+      .main-container {
+        min-height: 200px;
+        border: 1px solid rgb(90, 89, 89);
+        border-radius: 10px;
+        display: flex;
+      }
+
+      .grow-image {
+        width: 50%;
+      }
+
+      .grow,
+      .flow,
+      .user {
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 50px;
+        padding: 30px;
+      }
+
+      p {
+        font-size: 11px;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav1">
+        <img src="./images/logo.svg" class="svg" alt="" />
+        <button type="submit"><a href="#" class="try">Try It Free</a></button>
+      </nav>
+
+      <nav class="nav2">
+        <div class="purpose">
+          <h3>Build The Community Your Fans Will Love</h3>
+          <br />
+          <p>
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <br />
+          <button type="submit" value="Submit">
+            <a href="#">Get Started For Free</a>
+          </button>
+        </div>
+        <div class="image">
+          <img src="./images/illustration-mockups.svg" class="mockups" alt="" />
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="main-container grow" id="grow">
+        <div>
+          <h4>Grow Together</h4>
+          <br />
+          <p>
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback form.
+          </p>
+        </div>
+        <div>
+          <img
+            src="./images/illustration-grow-together.svg"
+            class="grow-image"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="main-container flow" id="flow"></section>
+
+      <section class="main-container user" id="user"></section>
+    </main>
+
+    Flowing Conversations You wouldn't paginate a conversation in real life, so
+    why do it online? Our threads have just-in-time loading for a more natural
+    flow. Your Users It takes no time at all to integrate Huddle with your app's
+    authentication solution. This means, once signed in to your app, your users
+    can start chatting immediately. Ready To Build Your Community? Get Started
+    For Free Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua +1-543-123-4567
+    example@huddle.com About Us What We Do FAQ Career Blog Contact Us &copy;
+    Copyright 2018 Huddle. All rights reserved.
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">PECUIHE</a>.
+      </p>
+    </footer>
+  </body>
+</html>
