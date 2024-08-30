@@ -13,6 +13,8 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
     <link
       rel="icon"
       type="image/png"
@@ -24,287 +26,8 @@
       Frontend Mentor | Huddle landing page with alternating feature blocks
     </title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./style.css">
 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-      * {
-        margin: 0;
-        padding: 0;
-        font-family: Poppins;
-        box-sizing: border-box;
-      }
-
-      body {
-        min-height: 100vh;
-      }
-
-      nav {
-        background: hsl(193, 100%, 96%) url(./images/bg-hero-mobile.svg)
-          no-repeat center/cover;
-      }
-
-      .navigation-wrapper {
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .logo {
-        width: 120px;
-        height: 20px;
-        margin-top: 8px;
-      }
-
-      .try-button {
-        background-color: hsl(0, 0%, 100%);
-        width: 120px;
-        height: 30px;
-        font-weight: bold;
-        border: 0.1px solid hsla(210, 17%, 91%, 0.5);
-        box-shadow: 2px 2px 5px hsla(0, 0%, 2%, 0.023) inset;
-      }
-
-      .header {
-        padding: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 100px;
-        text-align: center;
-      }
-
-      .landing-page {
-        width: 100%;
-        max-width: 350px;
-      }
-
-      .image {
-        width: 100%;
-        max-width: 350px;
-        height: 250px;
-      }
-
-      a {
-        text-decoration: none;
-        color: white;
-      }
-
-      button {
-        background-color: hsl(322, 100%, 66%);
-        border-radius: 20px;
-        border: 0;
-        height: 35px;
-        width: 230px;
-        cursor: pointer;
-      }
-
-      button:hover {
-        opacity: 0.5;
-      }
-
-      .card {
-        min-height: 200px;
-        border: 0.1px solid hsla(210, 17%, 91%, 0.5);
-        box-shadow: 2px 2px 5px hsla(0, 0%, 2%, 0.023) inset;
-        border-radius: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        font-size: 14px;
-        justify-content: center;
-        padding: 30px;
-        gap: 100px;
-      }
-
-      .card-divs {
-        width: 100%;
-        max-width: 350px;
-      }
-
-      .card-divs > p {
-        color: hsl(208, 11%, 55%);
-      }
-
-      .ready-wrapper {
-        background-color: hsl(0, 0%, 100%);
-        color: hsl(0, 0%, 0%);
-        padding: 35px 20px;
-        margin-top: 70px;
-        width: 100%;
-        max-width: 320px;
-        margin-left: 50%;
-        translate: -50%;
-        position: absolute;
-        border: 0.1px solid hsla(210, 17%, 91%, 0.5);
-        box-shadow: 2px 2px 5px hsla(0, 0%, 2%, 0.023) inset;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-      }
-
-      footer {
-        background-color: hsl(192, 87%, 12%);
-        color: hsl(0, 0%, 100%);
-        font-size: 20px;
-        margin-top: 150px;
-        padding: 50px;
-        display: grid;
-      }
-
-      .huddle-logo {
-        width: 100%;
-        width: 200px;
-        height: 30px;
-        margin-top: 100px;
-      }
-
-      .contact-wrapper {
-        display: grid;
-        gap: 20px;
-        width: 100%;
-        max-width: 320px;
-      }
-
-      .contact-info {
-        display: flex;
-        gap: 10px;
-      }
-
-      .icon {
-        width: 15px;
-        height: 15px;
-        margin-top: 5px;
-      }
-
-      .information {
-        margin: 50px 0;
-        display: grid;
-        gap: 30px;
-        width: 100%;
-        max-width: 320px;
-      }
-
-      .information > a:hover {
-        text-decoration: underline;
-      }
-
-      .socials-wrapper {
-        display: flex;
-        padding: 30px;
-        gap: 20px;
-        justify-content: center;
-        width: 100%;
-        max-width: 320px;
-      }
-
-      .socials {
-        width: 100%;
-        max-width: 45px;
-        height: 45px;
-        padding: 7px 12px;
-        border: 1px solid;
-        border-radius: 100%;
-        transition: all 0.5s;
-      }
-
-      .socials:hover {
-        color: hsl(322, 100%, 66%);
-        scale: 0.95;
-      }
-
-      .copyright {
-        text-align: center;
-        font-size: 12px;
-        width: 100%;
-        max-width: 320px;
-        margin-bottom: 50px;
-      }
-
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-
-      @media only screen and (min-width: 600px) {
-        nav {
-          background: hsl(193, 100%, 96%) url(./images/bg-hero-desktop.svg)
-          no-repeat center/cover;
-        }
-
-        .navigation-wrapper {
-          padding: 30px 200px;
-        }
-
-        .landing-page {
-          margin-top: 30px;
-          line-height: 1.2;
-        }
-
-        .landing-page > p {
-          font-size: 14px;
-        }
-        
-        .header {
-          text-align: justify;
-        }
-
-        .card {
-          margin: 50px 150px;
-          text-align: justify;
-        }
-
-        #grow,
-        #user {
-          display: flex;
-          flex-direction: row-reverse;
-        }
-
-        .contact-wrapper {
-          font-size: 12px;
-        }
-
-        .information {
-          font-size: 12px;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          position: absolute;
-          margin-left: 30%;
-          margin-top: 15%;
-        }
-
-        .socials {
-          font-size: 12px;
-          border: 1px solid;
-          width: 25px;
-          height: 25px;
-          padding: 3px 6.5px;
-        }
-
-        .socials-wrapper {
-          position: absolute;
-          margin-left: 55%;
-          margin-top: 13%;
-        }
-
-        .copyright {
-          font-size: 10px;
-          margin-left: 75%;
-        }
-
-        footer {
-          padding: 0 150px;
-        }
-      }
-    </style>
   </head>
 
   <body>
@@ -455,7 +178,7 @@
       <div class="socials-wrapper">
         <a
           href="https://facebook.com"
-          class="socials bi bi-facebook"
+          class="socials fa-brands fa-facebook-f"
           target="_blank"
         ></a>
         <a
@@ -473,15 +196,16 @@
         &copy; Copyright 2018 Huddle. All rights reserved.
       </div>
 
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/PECUIHE">PECUIHE</a>.
-      </p>
     </footer>
-   
+    
+
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/PECUIHE">PECUIHE</a>.
+    </p>
+
   </body>
 </html>
-
 
